@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asteroid Impact Visualizer 🌍</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🌠 Asteroid Impact Visualizer</h1>
+    <p>Type any place on Earth to simulate an asteroid impact and visualize its predicted effects using real data and statistics.</p>
+  </header>
+
+  <div class="input-container">
+    <input type="text" id="locationInput" placeholder="Enter a place (e.g., Kerala, New York)">
+    <button onclick="simulateImpact()">Simulate Impact</button>
+  </div>
+
+  <div id="map"></div>
+
+  <section id="impactResults" class="results-section">
+    <h3>Impact Results</h3>
+    <p>Enter a location to view predicted asteroid impact effects.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
